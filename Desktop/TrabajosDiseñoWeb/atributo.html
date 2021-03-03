@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Tiene el atributo, no importa el valor*/
+        [name] {
+            background-color: cadetblue;
+
+        }
+          /* Atributo con el valor exaacto*/
+        [for="name"]
+        {
+            text-transform: uppercase;
+        }
+
+          /* Atributo con la PALABRA en el valor*/
+        [id~="parrafo"]
+        {
+            font-family: Verdana, Geneva, Tahoma, 
+            sans-serif;
+        }
+
+           /* Atributo con la PALABRA en el valor*/
+        [alt~="UASLP"]
+        {
+            height: 50px;
+        }
+
+         /* Atributo que el valor empiece con la PALABRA*/
+        [id|="parrafo"]
+        {
+            border: solid 2px red;
+        }
+
+       /* Atributo que el valor termina con la cadena*/
+        [name$="e"]
+        {
+            margin-left: 20px;
+        }
+
+         /* Atributo que el valor contiene la cadena*/
+        [for*="name"]
+        {
+            color: seagreen;
+        }
+
+ </style>
+</head>
+<body>
+    <!-- CTL+k+c -->
+    <p id="parrafo-3">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Maiores minima cum, dolor 
+        consectetur ullam quia quidem ea quisquam 
+        accusantium fugit laborum sequi 
+        quaerat ex harum dolores officia et illo quo.</p>
+
+        <p id="parrafo-2">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Maiores minima cum, dolor 
+            consectetur ullam quia quidem ea quisquam 
+            accusantium fugit laborum sequi 
+            quaerat ex harum dolores officia et illo quo.</p>
+
+        <p id="parrafo-3">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Maiores minima cum, dolor 
+                consectetur ullam quia quidem ea quisquam 
+                accusantium fugit laborum sequi 
+                quaerat ex harum dolores officia et illo quo.</p>
+
+
+    <img src="" alt="logo UASLP">            
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text"name="name">
+        <br>
+        <label for="lastname1">Apellidos Paterno</label>
+        <input type="text"name="lastname1">
+        <br>
+        <label for="lastname2">Apellidos Materno</label>
+        <input type="text"name="lastname2">
+        <br>
+        <label for="phone">Telefono</label>
+        <input type="tel"name="phone">
+    </form>
+</body>
+</html>
